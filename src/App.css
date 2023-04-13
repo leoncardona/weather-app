@@ -1,0 +1,169 @@
+body {
+    background-color: #262626;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    
+}
+
+header h1 {
+    color: white;
+}
+
+header img {
+    width: 3rem;
+}
+
+header, #container {
+    padding: 1rem 25rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info h1 {
+    font-size: 5rem;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search input {
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 20rem;
+    border-radius: 5px;
+    background-color: none;
+    border: none;
+}
+
+.search ul {
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search li {
+    color: black;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.search li:hover {
+    background-color: lightgray;
+}
+
+.search h2 {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.card {
+    background-color: #304C89;
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card .top,
+.card .mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card .bottom {
+    margin-top: 1rem;
+}
+
+.card h1 {
+    font-size: 1.75rem;
+}
+
+.card h2 {
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+.mapa {
+    width: 40%;
+}
+
+.card, .mapa {
+    border: 2px solid black;
+}
+
+.today h1, .forecast h1
+{
+    margin: 0.5rem 0;
+}
+
+.today-items {
+    display: flex;
+    justify-content: space-between;
+    height: 32rem;
+}
+
+.forecast-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 10rem;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer span a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.custom-tooltip {
+    background-color: black;
+    border: none;
+    padding: 0.2rem;
+}
+
+@media only screen and (max-width: 1600px) {
+    header, #container {
+        padding: 1rem 10rem;
+    }
+}
